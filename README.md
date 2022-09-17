@@ -95,6 +95,7 @@ Usuário e senha: `admin`.
 
 Configurações:
 
-- Criar um data source com o Prometheus usando a URL `http://prometheus:9090`;
-- Criar um dashboard utilizando o data source Prometheus com:
-  - Código da métrica: `sum by(client_id) (floor(increase(orders_placed_total[10s])))`
+- criar um data source com o Prometheus usando a URL `http://prometheus:9090`;
+- criar um dashboard utilizando o data source Prometheus com:
+  - código da métrica: `sum by(client_id) (floor(increase(orders_placed_total[10s])))`;
+- o [arquivo `grafana-dashboard-model.json`](grafana-dashboard-model.json) contém o JSON Model exportado do dashboard.
